@@ -1,0 +1,163 @@
+---
+title: "Untitled"
+author: "Radhika Vijayaraghavan, netID# zg4894"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{python}
+#Given a list of numbers print their squares
+
+num_list = [1,2,3,4]
+i= 0
+
+for square in num_list:
+    i = square * square
+    print(i)
+
+
+```
+
+```{python}
+#Given a list of strings print all strings in reverse
+
+name_list = ['cba', 'abc', 'bcd']
+i = " "
+
+for name in name_list:
+    result = " "
+    for i in name:
+        result = i+result
+    print(result)
+
+```
+
+
+```{python}
+#Given list of strings print a string with concatenating all strings in reverse from behind
+
+name_list = ['seshank', 'abc', 'bcd']
+i = " "
+result = " "
+
+for name in name_list:
+    for i in name:
+        result = i+ result
+print(result)
+
+```
+
+
+```{python}
+#Program to print * in the shape of a right angle triangle
+
+star = int(input("enter the number of lines: "))
+
+
+for i in range(1,star+1):
+   for j in range(1,i+1):
+       print("*",end = " ")
+print(sep = " ") 
+
+
+```
+
+
+```{python}
+rev = int(input("enter number of lines: "))
+          
+for i in range(0,rev):
+    for j in range(0,rev-i-1):
+        print(end = " ")
+    for k in range(0,i):
+        print("*",end = "")
+    print(sep = "")
+
+
+```
+
+
+```{python}
+#Program to print if its a weekday/weekend/covid year/future year/past year
+
+#import calendar
+#yy = 2020
+#mm = 5
+#print(calendar.month(yy,mm))
+---------------------   
+input_day = int(input("enter the day: "))
+input_month = input("enter the month: ")
+input_year = int(input("enter the year: "))
+
+week_day = ["mon","tue","wed","thu","fri","sat","sun"]
+months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+
+if input_year>2020:
+    print("future year")
+elif input_year<2020:
+    print("past year")
+    
+input_week = input("enter the name of the day: ")
+
+if (input_week in week_day[0:5]) and input_year==2020:
+    print("it's a weekday and its a covid year")
+elif (input_week in week_day[4:7]) and input_year==2020:
+    print("it's a weekend and its a covid year")
+
+
+```
+
+
+```{python}
+
+#Given a list of numbers print list with cumulative sums
+
+lst = []
+n = int(input("Enter number of elements : "))
+result=0
+new=[]
+  
+for i in range(0,n): 
+    new_lst = int(input("enter the element: ")) 
+    lst.append(new_lst)        
+print(lst)
+for k in lst:
+    result=k+result
+    new.append(result)
+print(new)
+
+
+```
+
+
+```{python}
+#Check if a given input word is a palindrome or not 
+#Using string reverse
+
+string = input("enter a palindrome word: ")
+rev_string = string[::-1]
+if rev_string == string:
+  print("it's a palindrome")
+else:
+  print("not a palindrome")
+
+```
+
+
+```{python}
+#Check if a given input word is a palindrome or not
+#Using for loop
+
+string = input("enter a palindrome word: ")
+rev = ""
+for i in string:
+     rev = i+rev
+if list(i)==list(rev):
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+```
+
+
+
