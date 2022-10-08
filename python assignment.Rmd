@@ -1,6 +1,6 @@
 ---
 title: "Untitled"
-author: "Radhika Vijayaraghavan, netID# zg4894"
+author: "Radhika Vijayaraghavan, 2020"
 date: "`r Sys.Date()`"
 output: html_document
 ---
